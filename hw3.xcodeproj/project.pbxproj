@@ -8,15 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		B940BB2F2CC96BF200A41C53 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B940BB2E2CC96BF200A41C53 /* main.cpp */; };
+		B940BB3A2CC96C9200A41C53 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B940BB392CC96C9200A41C53 /* ShaderProgram.cpp */; };
+		B940BB3D2CC96D5100A41C53 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940BB3C2CC96D5100A41C53 /* OpenGL.framework */; };
+		B940BB3F2CC96D5500A41C53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940BB3E2CC96D5500A41C53 /* Cocoa.framework */; };
+		B940BB432CC96D6E00A41C53 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940BB402CC96D6E00A41C53 /* SDL2_mixer.framework */; };
+		B940BB442CC96D6E00A41C53 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940BB412CC96D6E00A41C53 /* SDL2.framework */; };
+		B940BB452CC96D6E00A41C53 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940BB422CC96D6E00A41C53 /* SDL2_image.framework */; };
+		B940BB462CC96D8700A41C53 /* shaders in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB372CC96C9200A41C53 /* shaders */; };
+		B940BB492CC9700B00A41C53 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B940BB472CC9700B00A41C53 /* Entity.cpp */; };
+		B940BB502CCACB8200A41C53 /* swim_kirby.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB4F2CCACB8200A41C53 /* swim_kirby.png */; };
+		B940BB522CCAE33C00A41C53 /* terrain.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB512CCAE33C00A41C53 /* terrain.png */; };
+		B940BB552CCB1BE200A41C53 /* mission_accomplished.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB532CCB1BE200A41C53 /* mission_accomplished.png */; };
+		B940BB562CCB1BE200A41C53 /* mission_failed.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB542CCB1BE200A41C53 /* mission_failed.png */; };
+		B940BB592CCD7B6B00A41C53 /* lava.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB572CCD7B6B00A41C53 /* lava.png */; };
+		B940BB5A2CCD7B6B00A41C53 /* goal.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB582CCD7B6B00A41C53 /* goal.png */; };
+		B940BB5C2CCDC7C400A41C53 /* background.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = B940BB5B2CCDC7C400A41C53 /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B940BB292CC96BF200A41C53 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 6;
 			files = (
+				B940BB462CC96D8700A41C53 /* shaders in CopyFiles */,
+				B940BB502CCACB8200A41C53 /* swim_kirby.png in CopyFiles */,
+				B940BB5C2CCDC7C400A41C53 /* background.jpg in CopyFiles */,
+				B940BB522CCAE33C00A41C53 /* terrain.png in CopyFiles */,
+				B940BB552CCB1BE200A41C53 /* mission_accomplished.png in CopyFiles */,
+				B940BB562CCB1BE200A41C53 /* mission_failed.png in CopyFiles */,
+				B940BB592CCD7B6B00A41C53 /* lava.png in CopyFiles */,
+				B940BB5A2CCD7B6B00A41C53 /* goal.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -25,6 +48,25 @@
 /* Begin PBXFileReference section */
 		B940BB2B2CC96BF200A41C53 /* hw3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw3; sourceTree = BUILT_PRODUCTS_DIR; };
 		B940BB2E2CC96BF200A41C53 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B940BB352CC96C9200A41C53 /* ShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProgram.h; sourceTree = "<group>"; };
+		B940BB362CC96C9200A41C53 /* glm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glm; sourceTree = "<group>"; };
+		B940BB372CC96C9200A41C53 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shaders; sourceTree = "<group>"; };
+		B940BB382CC96C9200A41C53 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		B940BB392CC96C9200A41C53 /* ShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		B940BB3C2CC96D5100A41C53 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B940BB3E2CC96D5500A41C53 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B940BB402CC96D6E00A41C53 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		B940BB412CC96D6E00A41C53 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		B940BB422CC96D6E00A41C53 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		B940BB472CC9700B00A41C53 /* Entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		B940BB482CC9700B00A41C53 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		B940BB4F2CCACB8200A41C53 /* swim_kirby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swim_kirby.png; sourceTree = "<group>"; };
+		B940BB512CCAE33C00A41C53 /* terrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terrain.png; sourceTree = "<group>"; };
+		B940BB532CCB1BE200A41C53 /* mission_accomplished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mission_accomplished.png; sourceTree = "<group>"; };
+		B940BB542CCB1BE200A41C53 /* mission_failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mission_failed.png; sourceTree = "<group>"; };
+		B940BB572CCD7B6B00A41C53 /* lava.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lava.png; sourceTree = "<group>"; };
+		B940BB582CCD7B6B00A41C53 /* goal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal.png; sourceTree = "<group>"; };
+		B940BB5B2CCDC7C400A41C53 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B940BB432CC96D6E00A41C53 /* SDL2_mixer.framework in Frameworks */,
+				B940BB442CC96D6E00A41C53 /* SDL2.framework in Frameworks */,
+				B940BB452CC96D6E00A41C53 /* SDL2_image.framework in Frameworks */,
+				B940BB3F2CC96D5500A41C53 /* Cocoa.framework in Frameworks */,
+				B940BB3D2CC96D5100A41C53 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +90,7 @@
 			children = (
 				B940BB2D2CC96BF200A41C53 /* hw3 */,
 				B940BB2C2CC96BF200A41C53 /* Products */,
+				B940BB3B2CC96D5100A41C53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +106,42 @@
 			isa = PBXGroup;
 			children = (
 				B940BB2E2CC96BF200A41C53 /* main.cpp */,
+				B940BB4A2CC9701200A41C53 /* assets */,
+				B940BB362CC96C9200A41C53 /* glm */,
+				B940BB392CC96C9200A41C53 /* ShaderProgram.cpp */,
+				B940BB352CC96C9200A41C53 /* ShaderProgram.h */,
+				B940BB372CC96C9200A41C53 /* shaders */,
+				B940BB382CC96C9200A41C53 /* stb_image.h */,
+				B940BB472CC9700B00A41C53 /* Entity.cpp */,
+				B940BB482CC9700B00A41C53 /* Entity.h */,
 			);
 			path = hw3;
+			sourceTree = "<group>";
+		};
+		B940BB3B2CC96D5100A41C53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B940BB422CC96D6E00A41C53 /* SDL2_image.framework */,
+				B940BB402CC96D6E00A41C53 /* SDL2_mixer.framework */,
+				B940BB412CC96D6E00A41C53 /* SDL2.framework */,
+				B940BB3E2CC96D5500A41C53 /* Cocoa.framework */,
+				B940BB3C2CC96D5100A41C53 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B940BB4A2CC9701200A41C53 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B940BB512CCAE33C00A41C53 /* terrain.png */,
+				B940BB4F2CCACB8200A41C53 /* swim_kirby.png */,
+				B940BB5B2CCDC7C400A41C53 /* background.jpg */,
+				B940BB582CCD7B6B00A41C53 /* goal.png */,
+				B940BB572CCD7B6B00A41C53 /* lava.png */,
+				B940BB532CCB1BE200A41C53 /* mission_accomplished.png */,
+				B940BB542CCB1BE200A41C53 /* mission_failed.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B940BB2F2CC96BF200A41C53 /* main.cpp in Sources */,
+				B940BB492CC9700B00A41C53 /* Entity.cpp in Sources */,
+				B940BB3A2CC96C9200A41C53 /* ShaderProgram.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +329,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2_image.framework/Versions/A/Headers,
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
